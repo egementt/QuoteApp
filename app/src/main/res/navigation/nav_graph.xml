@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/viewQuteFragment">
+
+    <fragment
+        android:id="@+id/viewQuteFragment"
+        android:name="com.example.currencyapi.fragment.ViewQuteFragment"
+        android:label="fragment_view_qute"
+        tools:layout="@layout/fragment_view_qute" >
+        <action
+            android:id="@+id/action_viewQuteFragment_to_quoteListFragment"
+            app:destination="@id/quoteListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/quoteListFragment"
+        android:name="com.example.currencyapi.fragment.QuoteListFragment"
+        android:label="fragment_quote_list"
+        tools:layout="@layout/fragment_quote_list" >
+        <action
+            android:id="@+id/action_quoteListFragment_to_viewQuteFragment"
+            app:destination="@id/viewQuteFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/viewQuteFragment" />
+    </fragment>
+</navigation>
