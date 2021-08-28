@@ -4,9 +4,9 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.currencyapi.models.Quote
+import com.example.currencyapi.models.QuoteDBModel
 
-@Database(entities = [Quote::class], version = 1)
+@Database(entities = [QuoteDBModel::class], version = 3, exportSchema = false)
 abstract class QuoteDatabase : RoomDatabase() {
 
     abstract fun quoteDao(): QuoteDAO
@@ -21,6 +21,7 @@ abstract class QuoteDatabase : RoomDatabase() {
                     QuoteDatabase::class.java,
                     "student.db"
                 ).allowMainThreadQueries()
+                    .fallbackToDestructiveMigration()
                     .build()
             }
             return instance

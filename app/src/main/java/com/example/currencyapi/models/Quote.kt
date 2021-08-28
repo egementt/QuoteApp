@@ -1,13 +1,14 @@
 package com.example.currencyapi.models
 
-import androidx.room.Entity
+import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "quote")
+
 data class Quote(
-    var id: Int,
-    var languageCode : String,
-    var content : String,
-    var url: String,
-    var  originator: Originator
+    @SerializedName("id")
+    var quoteId: Long,
+    var languageCode: String?,
+    var content: String,
+    var quoteUrl: String?,
+    var originator: Originator
 
 )

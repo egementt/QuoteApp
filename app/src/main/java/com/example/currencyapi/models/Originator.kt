@@ -1,7 +1,10 @@
 package com.example.currencyapi.models
 
+
 data class Originator(
-    var id: Int,
+    var id: Long,
     var name: String,
-    var url: String
+    var url: String,
+    val parentId: Long
+
 )

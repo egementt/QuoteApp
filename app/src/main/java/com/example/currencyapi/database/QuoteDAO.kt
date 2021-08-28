@@ -1,16 +1,15 @@
 package com.example.currencyapi.database
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.Query
-import com.example.currencyapi.models.Quote
+import androidx.room.*
+import com.example.currencyapi.models.QuoteDBModel
 
 @Dao
 interface QuoteDAO {
 
-    @Insert
-    fun insert(quote: Quote)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insert(quote: QuoteDBModel)
 
     @Query("SELECT*FROM quote")
-    fun getAllQuote(): ArrayList<Quote>
+    @Transaction
+    fun getAllQuote(): List<QuoteDBModel>
 }

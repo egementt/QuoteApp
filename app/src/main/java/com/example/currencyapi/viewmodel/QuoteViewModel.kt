@@ -1,4 +1,4 @@
-package com.example.currencyapi.view
+package com.example.currencyapi.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
