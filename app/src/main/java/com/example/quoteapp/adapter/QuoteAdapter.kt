@@ -1,12 +1,12 @@
-package com.example.currencyapi.adapter
+package com.example.quoteapp.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.currencyapi.R
-import com.example.currencyapi.models.QuoteDBModel
+import com.example.quoteapp.R
+import com.example.quoteapp.models.QuoteDBModel
 
 class QuoteAdapter(val quoteList: MutableList<QuoteDBModel>) :
     RecyclerView.Adapter<QuoteAdapter.ModelViewHolder>() {

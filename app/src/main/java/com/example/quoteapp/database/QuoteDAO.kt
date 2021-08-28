@@ -1,7 +1,7 @@
-package com.example.currencyapi.database
+package com.example.quoteapp.database
 
 import androidx.room.*
-import com.example.currencyapi.models.QuoteDBModel
+import com.example.quoteapp.models.QuoteDBModel
 
 @Dao
 interface QuoteDAO {

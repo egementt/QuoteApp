@@ -1,4 +1,4 @@
-package com.example.currencyapi.models
+package com.example.quoteapp.models
 
 import com.google.gson.annotations.SerializedName
 

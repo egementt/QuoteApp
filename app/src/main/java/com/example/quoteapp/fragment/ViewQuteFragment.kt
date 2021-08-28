@@ -1,4 +1,4 @@
-package com.example.currencyapi.fragment
+package com.example.quoteapp.fragment
 
 import android.os.Bundle
 import android.util.Log
@@ -9,11 +9,11 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.currencyapi.R
-import com.example.currencyapi.database.QuoteDatabase
-import com.example.currencyapi.databinding.FragmentViewQuteBinding
-import com.example.currencyapi.models.QuoteDBModel
-import com.example.currencyapi.viewmodel.QuoteViewModel
+import com.example.quoteapp.R
+import com.example.quoteapp.database.QuoteDatabase
+import com.example.quoteapp.databinding.FragmentViewQuteBinding
+import com.example.quoteapp.models.QuoteDBModel
+import com.example.quoteapp.viewmodel.QuoteViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

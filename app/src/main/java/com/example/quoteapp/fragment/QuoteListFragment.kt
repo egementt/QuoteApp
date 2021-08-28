@@ -1,4 +1,4 @@
-package com.example.currencyapi.fragment
+package com.example.quoteapp.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.currencyapi.adapter.QuoteAdapter
-import com.example.currencyapi.database.QuoteDatabase
-import com.example.currencyapi.databinding.FragmentQuoteListBinding
-import com.example.currencyapi.models.QuoteDBModel
+import com.example.quoteapp.adapter.QuoteAdapter
+import com.example.quoteapp.database.QuoteDatabase
+import com.example.quoteapp.databinding.FragmentQuoteListBinding
+import com.example.quoteapp.models.QuoteDBModel
 
 
 class QuoteListFragment : Fragment() {

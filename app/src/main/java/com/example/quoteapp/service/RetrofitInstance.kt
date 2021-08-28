@@ -1,6 +1,6 @@
-package com.example.currencyapi.service
+package com.example.quoteapp.service
 
-import com.example.currencyapi.utils.Constants.BASE_URL
+import com.example.quoteapp.utils.Constants.BASE_URL
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

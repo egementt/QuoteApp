@@ -1,8 +1,7 @@
-package com.example.currencyapi.service
+package com.example.quoteapp.service
 
-import com.example.currencyapi.models.Quote
+import com.example.quoteapp.models.Quote
 import retrofit2.http.GET
-import retrofit2.http.Header
 import retrofit2.http.Headers
 
 interface RetrofitApi {

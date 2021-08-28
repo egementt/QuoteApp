@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/viewQuteFragment"
-        android:name="com.example.currencyapi.fragment.ViewQuteFragment"
+        android:name="com.example.quoteapp.fragment.ViewQuteFragment"
         android:label="fragment_view_qute"
         tools:layout="@layout/fragment_view_qute" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/quoteListFragment"
-        android:name="com.example.currencyapi.fragment.QuoteListFragment"
+        android:name="com.example.quoteapp.fragment.QuoteListFragment"
         android:label="fragment_quote_list"
         tools:layout="@layout/fragment_quote_list" >
         <action

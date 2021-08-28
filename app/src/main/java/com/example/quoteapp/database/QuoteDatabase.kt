@@ -1,10 +1,10 @@
-package com.example.currencyapi.database
+package com.example.quoteapp.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.currencyapi.models.QuoteDBModel
+import com.example.quoteapp.models.QuoteDBModel
 
 @Database(entities = [QuoteDBModel::class], version = 3, exportSchema = false)
 abstract class QuoteDatabase : RoomDatabase() {

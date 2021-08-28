@@ -1,4 +1,4 @@
-package com.example.currencyapi
+package com.example.quoteapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
